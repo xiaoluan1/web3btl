@@ -1,0 +1,207 @@
+body {
+    background: #fff;
+    color: #2f3138;
+    font-family: "Open Sans", sans-serif;
+}
+  
+a {
+    color: #f82249;
+    transition: 0.5s;
+}
+  
+a:hover, a:active, a:focus {
+    color: #f8234a;
+    outline: none;
+    text-decoration: none;
+}
+  
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: #0e1b4d;
+}
+  
+.main-page {
+    margin-top: 70px;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    height: 90px;
+    padding: 25px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+  
+#header #logo a, #header #logo a:hover {
+    color: #fff;
+}
+  
+#header #logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Meu Container */
+#nav-menu-container {
+    float: right;
+    margin: 0;
+}
+
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.nav-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+  
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+  
+.nav-menu > li {
+    float: left;
+}
+  
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+    display: block;
+}
+  
+.nav-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+  
+.nav-menu ul li {
+    min-width: 180px;
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+    padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(202, 206, 221, 0.8);
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    outline: none;
+}
+  
+  
+.nav-menu .menu-active a, .nav-menu a:hover {
+    color: #fff;
+}
+  
+
+.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .menu-active > a:before {
+    visibility: visible;
+    width: 100%;
+}
+  
+
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/intro-bg.jpg) top center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+  
+#intro:before {
+    content: "";
+    background: rgba(6, 12, 34, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+  
+#intro .intro-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 90px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+  
+  
+#intro h1 {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+  
+#intro h1 span {
+    color: #f82249;
+}
+  
+#intro p {
+    color: #ebebeb;
+    font-weight: 700;
+    font-size: 20px;
+}
+  
+#intro .about-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #f82249;
+}
+  
+#intro .about-btn:hover {
+    background: #f82249;
+    color: #fff;
+}
+  
